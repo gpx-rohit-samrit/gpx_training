@@ -12,4 +12,4 @@ for file in $WILDCARD_PATH; do
     fi
 done
 
-echo "Number of .$EXTENSION files in $DIRECTORY: $COUNT"
+echo "No of .$EXTENSION files in $DIRECTORY: $COUNT"
