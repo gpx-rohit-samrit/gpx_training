@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Backup Script"
+echo "**Backup Script**"
 
 SOURCE=$1
 BACKUP_DIR=$2
@@ -14,11 +14,7 @@ if [ -d "$SOURCE" ]; then
   echo "Backing up Directory: $SOURCE"
   tar -czf "$BACKUP_FILE" -C "$SOURCE" .
 else
-  echo "Source is not a directory: $SOURCE"
+  echo "Source input is not a directory: $SOURCE"
   exit 1
 fi
 
-# # Perform the backup
-# tar -czf "$BACKUP_FILE" -C "$SOURCE" .
-
-# echo "Backup created at: $BACKUP_FILE"
